@@ -5,7 +5,7 @@ import { Activity, Search } from "lucide-react";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 
-export const Route = createFileRoute("/companies")({
+export const Route = createFileRoute("/companies/")({
   head: () => ({
     meta: [{ title: "Companies — FinScope AI" }, { name: "description", content: "All analyzed companies." }],
   }),
