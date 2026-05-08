@@ -3,16 +3,7 @@
   "framework": "tanstack-start",
   "buildCommand": "bun run build",
   "installCommand": "bun install",
-  "outputDirectory": ".vercel/output",
   "devCommand": "bun run dev",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/_build/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    }
-  ]
+  "trailingSlash": false
 }
