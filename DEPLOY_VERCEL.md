@@ -28,17 +28,19 @@ Copy `.env.example` → set the same keys in
 
 ## 3. Build & Output
 
-`vercel.json` is preconfigured:
+`vercel.json` is preconfigured for TanStack Start + Nitro on Vercel:
 
 ```json
 {
+  "framework": "tanstack-start",
   "buildCommand": "bun run build",
-  "installCommand": "bun install",
-  "outputDirectory": ".output/public"
+  "installCommand": "bun install"
 }
 ```
 
-SPA rewrites are enabled so deep links (e.g. `/companies/123`) resolve correctly.
+Do **not** set `outputDirectory` manually. The Nitro Vercel adapter writes the
+correct Build Output API files into `.vercel/output`, including the server
+function that handles `/`, `/companies/:id`, refreshes, and deep links.
 
 ## 4. Edge Functions / Database
 
