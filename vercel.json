@@ -3,7 +3,7 @@
   "framework": null,
   "buildCommand": "bun run build",
   "installCommand": "bun install",
-  "outputDirectory": ".output/public",
+  "outputDirectory": "dist/client",
   "devCommand": "bun run dev",
   "cleanUrls": true,
   "trailingSlash": false,
