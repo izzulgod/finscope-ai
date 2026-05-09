@@ -1,0 +1,8 @@
+node_modules
+.lovable
+supabase
+wrangler.jsonc
+dist
+.env
+.env.*
+!.env.production
