@@ -1,8 +1,10 @@
 node_modules
 .lovable
-supabase
 wrangler.jsonc
 dist
 .env
 .env.*
 !.env.production
+supabase/functions
+supabase/config.toml
+supabase/migrations
